@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class atleastOneGrater {
+public class atleastOneGreater {
 
     static int _1_atleastOneGrater(int[] arr, int N) { 
 
