@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class findMaxUptoIndexI {
+public class FindMaxUptoIndexI {
  
 
     static int findMaxUptoIndex(int[] arr, int N, int index) {
