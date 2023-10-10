@@ -1,11 +1,20 @@
+
+/*
+ * Time -->> O(N)
+ * Space -->> O(1)
+ */
 import java.util.*;
-
-
 public class sumOfStartAndEndIndex {
     
 
     static int sumBetweenStartAndEndIndex(int[] arr, int N, int s, int e) {
 
+        if(s < 0 && e > arr.length) {
+
+            System.out.println("Check start and end indexes ");
+            return 0;
+        }
+        
         int sum = 0;
 
         for(int i = 0; i < N; i++) {

@@ -10,7 +10,7 @@
 
 import java.util.Scanner;
 
-public class reverseElemetns {
+public class reverseElements {
 
     static int[] reverseElemetns(int[] arr, int N) {
 

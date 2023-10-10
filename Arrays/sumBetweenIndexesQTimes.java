@@ -26,6 +26,7 @@ public class sumBetweenIndexesQTimes {
 
             if(s < 0 || e > N -1) {
 
+                System.out.println("Check the strt and end index : ");
                 return;
             }
 
@@ -35,8 +36,8 @@ public class sumBetweenIndexesQTimes {
                 
             }
             System.out.println( "start : " + s + " end : " + e + " Sum :  " + sum);
-
         }
+        sc.close();
     }
 
     public static void main(String[] args) {

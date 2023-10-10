@@ -27,6 +27,7 @@ public class printArray {
         System.out.print("Enter the elements of the array : ");
 
         for (int i = 0; i < size; i++) {
+            System.out.print("Enter " + (i + 1) + " element : ");
             arr[i] = sc.nextInt();
         }
         printArray(arr);

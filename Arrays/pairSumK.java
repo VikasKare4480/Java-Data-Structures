@@ -1,7 +1,7 @@
 import java.util.*;
 
 /*
- * Time -->> O(N)
+ * Time -->> O(N^2)
  * Space -->> O(1)
  */
 public class pairSumK {
@@ -10,12 +10,13 @@ public class pairSumK {
 
         int count = 0;
         for(int i = 0; i < N; i++) {
+
             for(int j = 0; j < N; j++) {
                
                 if(i != j && (arr[i] + arr[j] == K)) {
 
                         count++;
-               }
+                }
             }
         }
 

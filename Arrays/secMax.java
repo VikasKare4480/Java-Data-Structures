@@ -35,7 +35,7 @@ public class secMax {
         int size = sc.nextInt();
 
         int[] arr = new int[size];
-        System.out.print("Enter the elements of the array : ");
+        // System.out.print("Enter the elements of the array : ");
 
         for (int i = 0; i < size; i++) {
             arr[i] = sc.nextInt();

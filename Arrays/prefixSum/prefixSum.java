@@ -1,5 +1,8 @@
 /*
  * Given an array so find the preFixSum array and return it and print it 
+ * 
+ * Time -->> O(N)
+ * Space -->> O(N)
  */
 
 package prefixSum;
