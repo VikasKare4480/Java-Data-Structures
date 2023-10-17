@@ -2,7 +2,7 @@ import java.util.*;
 
 public class atleastOneGreater {
 
-    static int _1_atleastOneGrater(int[] arr, int N) { 
+    static int _1_atleastOneGreater(int[] arr, int N) { 
 
         int count = 0;
         int itr = 0;
@@ -102,7 +102,7 @@ public class atleastOneGreater {
             arr[i] = sc.nextInt();
         }
 
-        int count1 = _1_atleastOneGrater(arr, size);
+        int count1 = _1_atleastOneGreater(arr, size);
         System.out.println("Count1 is : " + count1);
 
         int count2 = _2_optimised(arr, size);
