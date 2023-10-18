@@ -5,6 +5,7 @@ public class SubArraySumWithCarryForward {
 
     static void subArraySumCarryForward(int[] arr, int N) {
 
+            
         
     }
     public static void main(String[] args) {
