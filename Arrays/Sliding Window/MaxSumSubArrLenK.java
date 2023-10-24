@@ -3,7 +3,6 @@
 import java.util.*;
 
 public class MaxSumSubArrLenK {
-
     
     static int subArrMaxSumLenK(int[] arr, int k) {
 
@@ -114,7 +113,6 @@ public class MaxSumSubArrLenK {
         int k = sc.nextInt();
 
         // System.out.println("maxSum with lenght K is " + subArrMaxSumLenK(arr, k));
-
 
         System.out.println("maxSum with lenght K is " + withPrefixSum(arr, k));
 
