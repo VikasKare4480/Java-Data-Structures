@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class iterateColumnByColumn {
+public class IterateColumnByColumn {
 
 
     static void iterateColumnByColumn(int[][] arr) {
