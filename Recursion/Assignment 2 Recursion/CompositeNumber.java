@@ -12,7 +12,8 @@ public class CompositeNumber {
             return count;
         }
 
-        if(num % i == 0) {
+        if(num
+         % i == 0) {
             count++;
         }
         i++;
