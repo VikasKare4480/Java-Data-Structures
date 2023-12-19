@@ -1,6 +1,5 @@
-package LinkedList;
 import java.util.Scanner;
-
+import java.io.*;
 public class SinglyLinkedListClient {
     
 
@@ -123,7 +122,6 @@ class Node {
 
         this.data = data;
     }
-
 }
 
 class LinkedList {
@@ -244,7 +242,44 @@ class LinkedList {
 
     void deleteAtPos(int pos) {
 
-        
+        if(pos < 0)  {
+
+            System.out.println("Invalid position. position should not be negative");
+            return;
+        }
+
+        if(pos == 0) {
+
+            if(head != null) {
+
+                head = head.next;
+            }else {
+
+                System.out.println("List is empty");
+            }
+            return;
+        }
+
+        if(head == null) {
+
+            System.out.println("LinkedList is Empty");
+        }else if(pos == 1) {
+
+            deleteFirst();
+        }else if(pos == nodeCount()) {
+
+            deleteLast();
+        }else {
+
+            Node temp = head;
+
+            while (pos - 2 != 0) {
+
+                temp = temp.next;
+                pos--;
+            }
+            temp.next = temp.next.next;
+        }
     }
 
     int nodeCount() {
@@ -285,7 +320,7 @@ class LinkedList {
 
             System.out.print(
                 temp.data + " -> ");
-            temp = temp.next;
+                temp = temp.next;
             }
             System.out.println(temp.data);
         }        
