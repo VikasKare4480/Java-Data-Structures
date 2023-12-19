@@ -42,7 +42,7 @@ class DoublyLinkedList {
 
     void addLast(int data) {
 
-        Node newNode = new Node(data);
+          Node newNode = new Node(data);
 
         if(head == null) {
 
