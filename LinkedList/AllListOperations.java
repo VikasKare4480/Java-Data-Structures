@@ -72,7 +72,7 @@ class  ListOperations {
             curr = forward;            
         }
         head = prev;
-        System.out.println("After reversing LinkeList : ");
+        System.out.print("After reversing LinkeList : ");
         printList();
     }
 
@@ -94,6 +94,69 @@ class  ListOperations {
 
     }
 
+    void middleOfTheListSimple() {
+
+        int nodes = nodeCount();
+        
+        int count = 0;
+
+        Node temp = head;
+
+        while (count != nodes / 2) {
+
+            count++;
+            temp = temp.next;            
+        }
+
+        System.out.println("Middle Node is : " + temp.data);
+    }
+
+    void middleOfTheListFastForward() {
+
+        if(head == null) {
+
+            return;
+        }
+
+        Node slow = head;
+        Node fast = head.next;
+
+        while (fast != null) {
+
+            fast = fast.next;
+            
+            if(fast != null) {
+
+                fast = fast.next;
+            }
+            slow = slow.next;
+        }
+
+        System.out.println("Middle Node is : " + slow.data);
+
+    }
+
+    int nodeCount() {
+
+        int count = 0;
+        if(head == null) {
+
+            System.out.println("Linked List is Empty");
+
+        }else  {
+            
+            Node temp = head;
+
+            while (temp != null) {
+
+                count++;
+                temp = temp.next;                
+            }
+        }
+        System.out.println("Nodes in list are : " + count);
+        return count;
+    }
+
     void printList() {
 
         if(head == null) {
@@ -112,31 +175,9 @@ class  ListOperations {
 
             System.out.println(temp.data);
         }
-
-    }
-
-    void nodeCount() {
-
-        int count = 0;
-        if(head == null) {
-
-            System.out.println("Linked List is Empty");
-
-        }else  {
-            
-            Node temp = head;
-
-            while (temp != null) {
-
-                count++;
-                temp = temp.next;                
-            }
-        }
-
-        System.out.println("Nodes in the list are : " + count);
     }
 } 
-public class InPlaceReverse {
+public class AllListOperations {
 
     public static void main(String[] args) {
 
@@ -145,7 +186,8 @@ public class InPlaceReverse {
         char wantToContinue;
         do {
 
-            System.out.println("1. AddFirst : \n2. AddLast : \n3. Reverse List Iteratitions : \n4. Reverse List with Recursion \n5. Print LinkedList :");
+            System.out.println("1. AddFirst : \n2. AddLast : \n3. Reverse List with Iteratition : \n4. Reverse List with Recursion : \n5. Print List :  \n6. Middle Of List Simple : \n7. Middle of the List FastForward : \n8. Node Count : ");
+
             System.out.print("Enter the choice : ");
             int choice = sc.nextInt();
 
@@ -171,22 +213,40 @@ public class InPlaceReverse {
                     ll.reverseListIteratve();
                     break;
 
-                case 4:
+                case 4 :
 
+                // for recursion 
                     Node prev = null;
-
                     ll.reverseListRecuression(prev, ll.head);
+                    System.out.print("After reversing List : ");
+                    ll.printList();
                     break;
                 
-                case 5:
+                case 5 :
 
                     ll.printList();
+                    break;
+
+                case 6 :
+
+                    ll.middleOfTheListSimple();
+                    break;
+
+                case 7 : 
+
+                    ll.middleOfTheListFastForward();
+                    break;
+
+                case 8 : 
+
+                    ll.nodeCount();
                     break;
 
                 default:
                     System.out.println("No match found enter correct choice");
                     break;
             }
+
 
             System.out.print("Do you want to Continue (Y/y): ");
             wantToContinue = sc.next().charAt(0);
