@@ -1,5 +1,4 @@
 package Stack;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -25,8 +24,7 @@ class Stack {
 
         }else { 
 
-            top++;
-            stackArr[top] = data;
+            stackArr[++top] = data;
             return data;
         }  
     }
@@ -38,9 +36,9 @@ class Stack {
             System.out.println("Stack Underflow");
             return -1;
         }
-        int popped = stackArr[top];
-        top--;
-        return popped;
+        // int popped = stackArr[top];
+        // top--;
+        return stackArr[top--];
     }
 
     int peek() {

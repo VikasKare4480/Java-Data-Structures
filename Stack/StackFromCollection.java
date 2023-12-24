@@ -2,8 +2,6 @@ package Stack;
 import java.util.Stack;
 import java.util.Vector;
 
-import javax.sound.midi.MidiSystem;
-
 class StackFromCollecion {
 
     public static void main(String[] args) {
