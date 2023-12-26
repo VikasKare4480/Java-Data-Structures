@@ -32,7 +32,6 @@ class ParenthesisValidator {
                         return false;
                     }
                 }
-
             }
         }
         return false;
