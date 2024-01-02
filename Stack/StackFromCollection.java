@@ -1,6 +1,6 @@
 package Stack;
 import java.util.Stack;
-import java.util.Vector;
+
 
 class StackFromCollecion {
 
@@ -29,6 +29,6 @@ class StackFromCollecion {
 
         System.out.println("After pop() : " + myStack);
         System.out.println(myStack.isEmpty());
-
+        System.out.println(myStack.search("Microsoft"));
     }
 }
