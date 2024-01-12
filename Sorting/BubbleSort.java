@@ -1,9 +1,8 @@
-package Sorting;
+
 /*
  * Bubble Sort ->> sort element by comaring with the other element 
  * Time -- >> O(N^2) Linear Time
  * Space -->> O(1) - Constant Space no extra space nedded 
- * 
  */
 
 import java.io.*;

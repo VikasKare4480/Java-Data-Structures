@@ -1,4 +1,4 @@
-package Sorting;
+// package Sorting;
 /*
  * Selection Sort :  select a min element from the rigth of the thar element from hte array 
  * and place to the ith position 
@@ -8,9 +8,6 @@ package Sorting;
 
 import java.util.Scanner;
 
-/**
- * SelectionSort
- */
 public class SelectionSort {
 
     void selectionSort(int[] arr) {
