@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+import java.util.Scanner;
 public class QuickSort {
 
     public static void quickSort(int arr[], int start, int end) {
@@ -32,10 +32,20 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
- 
-        int arr1[] = {12,4,22,10,15,56,34,82};
-        System.out.println(Arrays.toString(arr1));
-        quickSort(arr1,0,arr1.length-1);
-        System.out.println(Arrays.toString(arr1));
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of the array : ");
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+
+        for(int i = 0; i < arr.length; i++) {
+
+            System.out.print("Enter the " + (i + 1) + " element : ");
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.println(Arrays.toString(arr));
+        quickSort(arr,0,arr.length-1);
+        System.out.println(Arrays.toString(arr));
     }
 }
