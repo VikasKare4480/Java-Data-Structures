@@ -171,5 +171,6 @@ class Client {
             System.out.print("Do you want to countinue(Y/y) : ");
             ch = sc.next().charAt(0);
         } while (ch == 'Y' || ch == 'y');
+        sc.close();
     }
 }
