@@ -1,23 +1,27 @@
 
 import java.util.Scanner;  
 import java.util.Stack; 
+import java.util.List;
 
 public class ReserveStringUsingStack {
 
     static String reverseStringWithStack(String str) {
 
-        Stack<Character> stack = new Stack<>();
+        List<Character> stack = new Stack<>();
 
         for(char ch : str.toCharArray()) {
 
-            stack.push(ch);
+            stack.add(ch);
         }
 
         StringBuilder sb = new StringBuilder();
 
-        while (!stack.isEmpty()) {
+        System.out.println(stack.size());
+        int i = stack.size() - 1;
+        while (i >= 0) {
 
-            sb.append(stack.pop());
+            sb.append(stack.get(i));
+            i--;
         }
         return sb.toString();
     }
