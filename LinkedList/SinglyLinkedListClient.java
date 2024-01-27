@@ -2,7 +2,6 @@ import java.util.Scanner;
 import java.io.*;
 public class SinglyLinkedListClient {
     
-
     public static void main(String[] args) {
      
         Scanner sc = new Scanner(System.in);
@@ -318,8 +317,7 @@ class LinkedList {
 
             while (temp.next != null) {
 
-            System.out.print(
-                temp.data + " -> ");
+            System.out.print(temp.data + " -> ");
                 temp = temp.next;
             }
             System.out.println(temp.data);
