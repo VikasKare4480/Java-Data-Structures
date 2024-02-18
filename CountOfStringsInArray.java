@@ -6,8 +6,7 @@ class CountOfStrongNumbersInArray {
     static int getCountofStrongNumbers(int[] arr) {
 
         int countOfStrongs = 0;
-
-
+=
         return countOfStrongs;
     }
 
@@ -19,7 +18,14 @@ class CountOfStrongNumbersInArray {
 
     static int getCountOfDigits(int number) {
 
-        return 
+        int digitCount = 0;
+
+        int numCout
+        while() {
+
+            
+        }
+        return
         
     }
 
