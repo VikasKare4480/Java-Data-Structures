@@ -12,21 +12,22 @@ class CountOfStrongNumbersInArray {
 
     static boolean isStrongNumber(int number) {
 
-        int countOfDigits = 
+        
         return false;
     } 
 
     static int getCountOfDigits(int number) {
 
-        int digitCount = 0;
+        int countOfDigits = 0;
 
-        int numCout
-        while() {
+        int numCopy = number;
 
-            
+        while(numCopy > 0) {
+
+            digitCount++;
+            numCopy /= 10;
         }
-        return
-        
+        return digitCount; 
     }
 
     public static void main(String[] args) {
