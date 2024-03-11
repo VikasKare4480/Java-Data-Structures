@@ -24,10 +24,10 @@ class CountOfStrongNumbersInArray {
 
         while(numCopy > 0) {
 
-            digitCount++;
+            countOfDigits++;
             numCopy /= 10;
         }
-        return digitCount; 
+        return countOfDigits; 
     }
 
     public static void main(String[] args) {
