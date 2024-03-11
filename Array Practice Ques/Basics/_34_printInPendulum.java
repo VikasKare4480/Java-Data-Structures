@@ -9,7 +9,6 @@ class _34_printInPendulum {
 
     }
 
-
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
@@ -22,6 +21,6 @@ class _34_printInPendulum {
             System.out.print("Enter " + (i + 1) + " element : ");
             arr[i] = sc.nextInt();
         }
-
+    }
 
 }
