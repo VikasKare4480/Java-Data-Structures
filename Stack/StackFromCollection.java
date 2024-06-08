@@ -1,7 +1,6 @@
 package Stack;
 import java.util.Stack;
 
-
 class StackFromCollecion {
 
     public static void main(String[] args) {
@@ -11,13 +10,11 @@ class StackFromCollecion {
         myStack.add(10);
         myStack.push(50);
         myStack.push("Google");
-
         
         for(var data : myStack) {
 
             System.out.println(data);
         }
-
         System.out.println(myStack);
         System.out.println("Data at the top of the stack : " + myStack.peek());  
         System.out.println("POP : " + myStack.pop()); 

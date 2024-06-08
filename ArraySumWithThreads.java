@@ -17,14 +17,13 @@ public class ArraySumWithThreads {
         for (int i = 0; i < NUM_THREADS; i++) {
             int startIndex = i * chunkSize;
             int endIndex = (i == NUM_THREADS - 1) ? arrayLength : (i + 1) * chunkSize;
-
             executor.submit(() -> {
                 int localSum = 0;
                 for (int j = startIndex; j < endIndex; j++) {
                     localSum += array[j];
                 }
                 synchronized (ArraySumWithThreads.class) {
-                    result += localSum;
+                    // result += localSum;
                 }
             });
         }

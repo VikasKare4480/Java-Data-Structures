@@ -6,7 +6,7 @@ class CountOfStrongNumbersInArray {
     static int getCountofStrongNumbers(int[] arr) {
 
         int countOfStrongs = 0;
-=
+
         return countOfStrongs;
     }
 
