@@ -1,7 +1,5 @@
 
 import java.util.Scanner;
-
-import javafx.scene.transform.Scale;
 class MadeWithLove  {
 
     public static void main(String[] args) {

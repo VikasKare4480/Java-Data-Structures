@@ -46,5 +46,6 @@ class CountOfStrongNumbersInArray {
 
         int countOfStrongNumber = getCountofStrongNumbers(arr);
         System.out.println("Total no of strons int array are : " + countOfStrongNumber);
+        sc.close();
     }
 }

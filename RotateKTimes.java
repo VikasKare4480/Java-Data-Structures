@@ -13,6 +13,10 @@ class RotateKTimes {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the K : ");
         int k = sc.nextInt();
+        System.out.println(
+            k
+        );
+        sc.close();
     }
 }
 
