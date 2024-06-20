@@ -19,7 +19,7 @@ public class TreeTraversal {
     private static void preOrderTreeTraversal(Node root) {
 
         if(root != null) {
-            System.out.println(root.data);
+            System.out.print(root.data);
             preOrderTreeTraversal(root.left); 
             preOrderTreeTraversal(root.right);
         }
@@ -32,7 +32,7 @@ public class TreeTraversal {
         if(root != null) {
 
             inOrderTreeTraversal(root.left);
-            System.out.println(root.data);
+            System.out.print(root.data);
             preOrderTreeTraversal(root.right);
         }
 
@@ -46,7 +46,7 @@ public class TreeTraversal {
 
             postOrderTreeTRaversal(root.left);            
             postOrderTreeTRaversal(root.right);
-            System.out.println(root.data);
+            System.out.print(root.data);
         }
     }
 
@@ -64,12 +64,17 @@ public class TreeTraversal {
         root.right.right = new Node(7);
         
         // Preorder Traversal
+        System.out.print("Pre_order Tree Traversal : ");
         preOrderTreeTraversal(root);
+        System.out.println();
 
         // Inorder Traversal
+        System.out.print("In Order Tree Traversal : ");
         inOrderTreeTraversal(root);
-
+        System.out.println();
+        
         //Post-Order Traersal
+        System.out.print("Post Order Tree Traversal : ");
         postOrderTreeTRaversal(root);
 
         sc.close();
