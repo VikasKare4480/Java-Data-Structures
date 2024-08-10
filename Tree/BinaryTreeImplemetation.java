@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 class Node {
 
@@ -14,6 +13,7 @@ class Node {
 public class BinaryTreeImplemetation {
 
     Scanner sc = new Scanner(System.in);
+
     private Node createBianryTree() {
 
         System.out.print("Enter Data for Node : ");
@@ -88,6 +88,5 @@ public class BinaryTreeImplemetation {
         // Post-order Tree Traversal 
         System.out.print("Postorder Tree Traversal : "); 
         bt.postOrderTreeTRaversal(root);
-
     }
 }
