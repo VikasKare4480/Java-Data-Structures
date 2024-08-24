@@ -35,7 +35,7 @@ class BinarySearch {
         
         BinarySearch bs = new BinarySearch();
         int[] arr = {10, 20, 30, 45, 65, 78};
-        int target = 100;
+        int target = 65;
 
         int index = bs.binarySearch(arr, target);
 
