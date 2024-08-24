@@ -65,6 +65,6 @@ public class SelectionSort {
 
         System.out.println("After Sorting : ");
         ss.printArray(arr);
-
+        sc.close();
     }
 }

@@ -11,7 +11,7 @@ class StackFromCollecion {
         myStack.push(50);
         myStack.push("Google");
         
-        for(var data : myStack) {
+        for(Object data : myStack) {
 
             System.out.println(data);
         }

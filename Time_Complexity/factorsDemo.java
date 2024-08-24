@@ -65,6 +65,7 @@ public class factorsDemo {
         int num = sc.nextInt();
 
         System.out.println(factorsCount3(num));
+        sc.close();
     }
     
 }

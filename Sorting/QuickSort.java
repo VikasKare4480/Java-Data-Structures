@@ -47,5 +47,6 @@ public class QuickSort {
         System.out.println(Arrays.toString(arr));
         quickSort(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
+        sc.close();
     }
 }

@@ -1,4 +1,4 @@
-import java.util.Arrays;
+// import java.util.Arrays;
 import java.util.Scanner;
 
 class Merge_Sort {
@@ -96,7 +96,7 @@ class Merge_Sort {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
-        Merge_Sort ms = new Merge_Sort();
+        // Merge_Sort ms = new Merge_Sort();
         System.out.print("Enter the size of Array : ");
         int size = sc.nextInt();
 
@@ -116,6 +116,6 @@ class Merge_Sort {
         sort(arr, start, end);
         System.out.println("After sorting : ");
         printArray(arr);
-    
+        sc.close();
     }
 }

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.io.*;
+// import java.io.*;
 
 class countDemo {
 
@@ -39,6 +39,7 @@ class countDemo {
         System.out.println( countDemo1(a, b));
 
         System.out.println(countDemo2(a, b));
+        sc.close();
     }   
 }
 
