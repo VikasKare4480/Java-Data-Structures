@@ -20,6 +20,6 @@ public class DoubleRecursion {
         int num = sc.nextInt();
         
         System.out.println(doubleRecursion(num));
-
+        sc.close();
     }
 }

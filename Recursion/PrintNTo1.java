@@ -21,6 +21,7 @@ public class PrintNTo1 {
         int num = sc.nextInt();
 
         fun(num);
+        sc.close();
     }
     
 }

@@ -37,7 +37,7 @@ public class SumUptoNum {
         // System.out.println(sumUptoNum(num));
 
         System.out.println("No of stacs pushed : " + count);
-
         System.out.println("SumUptoN : " + sumUptoN(num));
+        sc.close();
     }
 }
