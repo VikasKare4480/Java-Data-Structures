@@ -71,14 +71,11 @@ class LinkedList {
 
             System.out.println("Nodes in the list are : " + count);
         }
-
-        
     }
 }
 public class MiddleOfLList {
 
     public static void main(String[] args) {
-
 
         
     }

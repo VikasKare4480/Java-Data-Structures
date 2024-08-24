@@ -62,6 +62,7 @@ class NonRepeatingChar {
 			System.out.println(str);
 			int HashMapReturn = nonRepeatingCharWithWhile(str);
 			System.out.println("The first non repeating character in the " + str + " is " + str.charAt(HashMapReturn));
+			sc.close();
 		}
 }
 			

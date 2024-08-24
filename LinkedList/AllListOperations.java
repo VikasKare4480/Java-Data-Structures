@@ -252,6 +252,7 @@ public class AllListOperations {
             wantToContinue = sc.next().charAt(0);
 
         } while (wantToContinue == 'Y' || wantToContinue == 'y');
+        sc.close();
     }
      
 }

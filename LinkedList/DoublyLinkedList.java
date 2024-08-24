@@ -307,6 +307,7 @@ class DLinkedList {
             ch = sc.next().charAt(0);
 
         }while(ch ==  'Y' || ch == 'y');
+        sc.close();
 
     }
 }
