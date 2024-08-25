@@ -111,6 +111,49 @@ public class TreeOperations {
         }
     }
 
+    // Helper Method to count the nodes of Tree
+    int countNodes(Node root) {
+        
+        if(root == null) {
+
+            return 0;
+        }
+        return 1 + countNodes(root.left) + countNodes(root.right);
+    }
+
+    // Helper Method
+    // Sum of Tree Nodes
+    int sumOfTreeNodes(Node root) {
+
+        if (root == null) {
+            
+            return 0;
+        }
+        return root.data + sumOfTreeNodes(root.left) + sumOfTreeNodes(root.right);
+    }
+
+    // Heleper method to get Height of the Binary Tree
+    int heightOfBianryTree(Node root) {
+        
+        if(root == null) {
+
+            return 0;
+        }
+        return Math.max(heightOfBianryTree(root.left), heightOfBianryTree(root.right)) + 1;
+    }
+
+    // A Helper method to for printing the level order traversal
+    void levelOrderTraversal(Node root) {
+
+        if(root == null) {
+        
+            return;
+        }   
+
+        Queue<Node> nodesQueue = new Queue(0)
+
+    }
+
     // A main method which executes first
     public static void main(String[] args) {
         
@@ -129,15 +172,30 @@ public class TreeOperations {
         int nodeCount = tops.countNodesWithoutRecursion(root);
         System.out.println("Nodes Count -> " +  nodeCount);
 
-        // This are NON-RECURSION Methods
-
+        // These are NON-RECURSIVE Methods
         // Pre-Order Traversal 
         tops.preOrderTraversal(root);
 
-        // postOrder Traversals
+        // InOrder Traversals 
+        // Status -> Incomlete
+        // tops.inOrderTraversal(root);
 
-
         // postOrder Traversals
+        // Status -> InComplete
+        // tops.postOrderTraversal(root);
+
+        // Count Nodes of Tree
+        System.out.println();
+        int nodeCount1 = tops.countNodes(root);
+        System.out.println("nodeCount -> " + nodeCount1);
+
+        // Get sum of Tree nodes
+        int nodeSum = tops.sumOfTreeNodes(root);
+        System.out.println("Sum Of Tree Nodes - > " + nodeSum);
+
+        // get the height of the Binary Tree
+        int height = tops.heightOfBianryTree(root);
+        System.out.println("Height of Binary Tree -> " + height);
         sc.close();
     }
 }
