@@ -39,5 +39,6 @@ public class _2_NumberOfOccurances {
         int B = sc.nextInt();
 
         System.out.println("Number of Occurances : " + occuranceCount(arr, size, B));
+        sc.close();
     }
 }

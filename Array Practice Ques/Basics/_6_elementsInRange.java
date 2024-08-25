@@ -58,6 +58,7 @@ class _6_elementsInRange {
 
             System.out.println("elements are in Range");
         }
-        
+
+        sc.close();
     }   
 }

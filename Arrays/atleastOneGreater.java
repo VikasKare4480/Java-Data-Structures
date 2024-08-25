@@ -28,8 +28,8 @@ public class atleastOneGreater {
     // O(N)
     static int _2_optimised(int[] arr, int N) {
 
-        int count = 0;
-        int itr = 0;
+        // int count = 0;
+        // int itr = 0;
 
         // find largest element 
         int max = Integer.MIN_VALUE;
@@ -110,5 +110,6 @@ public class atleastOneGreater {
 
         int count3 = _3_arrayList(arr, size);
         System.out.println("Count3 : " + count3);
+        sc.close();
     }   
 }

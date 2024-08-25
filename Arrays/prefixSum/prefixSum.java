@@ -46,6 +46,6 @@ public class prefixSum {
         printArray(arr);
         System.out.println();
         psArray(arr, N);
-       
+       sc.close();
     }
 }

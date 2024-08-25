@@ -7,7 +7,7 @@
 import java.util.*;
 public class maxElement {
     
-    static int maxElement(int[] arr) {
+    static int maxElement1(int[] arr) {
 
         int max = Integer.MIN_VALUE;
         for (int i = 1; i < arr.length; i++) {
@@ -30,9 +30,9 @@ public class maxElement {
             arr[i] = sc.nextInt();
         }
 
-        int maxElement = maxElement(arr);
-    
+        int maxElement = maxElement1(arr);
 
         System.out.println("Maximum element is : " + maxElement);
+        sc.close();
     }
 }

@@ -72,5 +72,6 @@ public class reverseElements {
         printArray(arr);
         // printArray(reverseElemetns(arr, size));
         printArray(twoPointerApprach(arr, size));
+        sc.close();
     }
 }

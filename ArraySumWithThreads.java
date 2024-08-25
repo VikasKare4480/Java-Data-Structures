@@ -19,6 +19,7 @@ public class ArraySumWithThreads {
             int endIndex = (i == NUM_THREADS - 1) ? arrayLength : (i + 1) * chunkSize;
             executor.submit(() -> {
                 int localSum = 0;
+                System.out.println(localSum);
                 for (int j = startIndex; j < endIndex; j++) {
                     localSum += array[j];
                 }

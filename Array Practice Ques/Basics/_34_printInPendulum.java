@@ -1,5 +1,3 @@
-import java.io.*;
-
 import java.util.*;
 
 class _34_printInPendulum {
@@ -21,6 +19,7 @@ class _34_printInPendulum {
             System.out.print("Enter " + (i + 1) + " element : ");
             arr[i] = sc.nextInt();
         }
+        sc.close();
     }
 
 }

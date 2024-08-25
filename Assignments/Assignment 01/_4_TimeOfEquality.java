@@ -56,6 +56,6 @@ public class _4_TimeOfEquality {
         }
 
         System.out.println("Time of equality is " + timeOfEquality(arr, N));
-
+        sc.close();
     }
 }

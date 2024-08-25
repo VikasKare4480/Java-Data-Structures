@@ -38,5 +38,6 @@ public class pairSumK {
         int k = sc.nextInt();
         int paircount =   pairSum(arr, size, k);
         System.out.println(paircount);
+        sc.close();
     }
 }

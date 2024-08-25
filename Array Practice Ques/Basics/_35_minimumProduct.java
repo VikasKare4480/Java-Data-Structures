@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 public class _35_minimumProduct {
@@ -33,6 +32,6 @@ public class _35_minimumProduct {
         int k = sc.nextInt();
 
         System.out.println(minimumProduct(arr, k));
-
+        sc.close();
     }
 }

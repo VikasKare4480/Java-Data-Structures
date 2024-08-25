@@ -5,7 +5,7 @@ public class _7_leaderNumbe {
 
     public static ArrayList<Integer> leaderNumber(int[] arr, int N) {
 
-        ArrayList<Integer> al = new ArrayList<>();
+        // ArrayList<Integer> al = new ArrayList<>();
 
         // int max = Integer.MIN_VALUE;
 
@@ -68,5 +68,6 @@ public class _7_leaderNumbe {
         }
 
         System.out.println(leaderNumber(arr, N));
+        sc.close();
     }  
 }

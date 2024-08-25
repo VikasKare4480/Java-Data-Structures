@@ -34,5 +34,6 @@ class _32_sumOfFPaires {
         }
         int maxSum = maxSum(arr);
         System.out.println("maxSum is : " + maxSum);
+        sc.close();
     }
 }

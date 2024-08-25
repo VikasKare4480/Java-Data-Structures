@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 class _33_leftRight {
@@ -38,5 +37,6 @@ class _33_leftRight {
         }
 
         System.out.println(multLeftRrite(arr));
+        sc.close();
     }
 }

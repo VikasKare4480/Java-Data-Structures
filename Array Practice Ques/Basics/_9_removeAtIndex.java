@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class _9_removeAtIndex {
@@ -52,6 +51,7 @@ public class _9_removeAtIndex {
 
         }
 
+        sc.close();
     }
     
 }

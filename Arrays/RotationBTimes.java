@@ -81,6 +81,7 @@ public class RotationBTimes {
         // rotationBTimesleft(arr, size, B);
         rotateArrayRight(arr,size,B);
         printArray(arr);
+        sc.close();
     }
 
     static void printArray(int[] arr) {

@@ -1,7 +1,6 @@
 
 // Bitonic point is the element has the lesses in previous index and also the lesser in next index element 
 import java.io.*;
-import java.util.*;
 
 public class _36_bitonicPoint {
 

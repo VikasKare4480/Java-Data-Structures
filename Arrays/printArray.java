@@ -10,7 +10,7 @@ import java.util.*;
 public class printArray {
     
 
-    static void printArray(int[] arr) {
+    static void printArray1(int[] arr) {
 
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
@@ -30,6 +30,8 @@ public class printArray {
             System.out.print("Enter " + (i + 1) + " element : ");
             arr[i] = sc.nextInt();
         }
-        printArray(arr);
+        printArray1(arr);
+        sc.close();
+
     }
 }

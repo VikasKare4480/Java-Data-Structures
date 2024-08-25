@@ -47,6 +47,7 @@ public class _1_SumOfMaxMin {
         }
 
         System.out.println("Sum of Max and Min : " + sumMaxMin(arr, N));
+        sc.close();
     }
     
 }

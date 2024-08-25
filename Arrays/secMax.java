@@ -43,6 +43,7 @@ public class secMax {
 
         printArray(arr);
         System.out.println(" secMax is : " + + secMaxElement(arr, size));
+        sc.close();
     }
     
 }

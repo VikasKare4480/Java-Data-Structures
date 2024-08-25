@@ -48,5 +48,6 @@ public class kthMax {
 
         printArray(arr);
         System.out.println(" kthMax is : " + + kThMaxelement(arr, size, k));
+        sc.close();
     }
 }

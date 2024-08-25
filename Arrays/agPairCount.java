@@ -53,7 +53,8 @@ public class agPairCount {
 
         int pairCount = agCharPairCount(arr, size, a, g);
         System.out.println(pairCount);
-        
+
+        sc.close();
     }
 
 }

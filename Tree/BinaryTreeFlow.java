@@ -65,7 +65,7 @@ public class BinaryTreeFlow {
     
     public static void main(String[] args) {
 
-        Node node = null;
+        // Node node = null;
         BinaryTreeFlow btf = new BinaryTreeFlow();
         btf.createBianryTree();
     }

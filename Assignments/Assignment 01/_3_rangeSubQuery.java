@@ -52,6 +52,6 @@ public class _3_rangeSubQuery {
 
             System.out.print(" " + sumArray[i]);
         }
+        sc.close();
     }
-    
 }

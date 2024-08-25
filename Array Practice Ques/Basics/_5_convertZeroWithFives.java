@@ -27,6 +27,7 @@ class replaceZeroWithFives {
 
         int reaplced = replcenumbers(num);
         System.out.println(reaplced);
+        sc.close();
     }
     
 }

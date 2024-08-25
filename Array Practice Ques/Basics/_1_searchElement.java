@@ -3,7 +3,6 @@
 // Given an integer array and another integer element. The task is to find if the given
 // element is present in the array or not.
 
-import java.io.*;
 import java.util.*;
 
 class _1 {
@@ -38,5 +37,6 @@ class _1 {
                 System.out.println("No element found ");
             }
         } 
+        sc.close();
     }
 }

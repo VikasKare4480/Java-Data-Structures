@@ -1,4 +1,3 @@
-import java.text.StringCharacterIterator;
 import java.util.*; 
 
 class _7_lagesetNumber_from_digit {
@@ -61,5 +60,6 @@ class _7_lagesetNumber_from_digit {
         String large_Nunmber = largest_digit(arr);
 
         System.out.println(large_Nunmber);
+        sc.close();
     }
 }

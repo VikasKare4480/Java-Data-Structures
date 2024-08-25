@@ -33,6 +33,7 @@ public class _4_prodOfElements {
             arr[i] = sc.nextInt();
         }
         araryProduct(arr,mod);
+        sc.close();
     }
     
 }

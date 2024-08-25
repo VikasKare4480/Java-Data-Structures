@@ -41,5 +41,6 @@ public class _6_ProductArray {
 
             System.out.print(" " + prodArray[i]);
         }
+        sc.close();
     }
 }

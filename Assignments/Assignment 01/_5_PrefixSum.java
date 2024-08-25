@@ -38,5 +38,6 @@ public class _5_PrefixSum {
 
             System.out.print(" " + arr[i]);
         }
+        sc.close();
     }
 }

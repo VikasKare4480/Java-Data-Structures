@@ -44,6 +44,6 @@ class _8_Even_Occurances {
         }
 
         evenOccurances(arr);
-
+        sc.close();
     }
 }

@@ -34,7 +34,7 @@ class _2_minMaxElement {
         }
 
         System.out.println("min and max elemtnts are " + min + " and " +  max);
-        
+        sc.close();
     }
     
 }

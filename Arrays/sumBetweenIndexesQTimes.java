@@ -13,8 +13,6 @@ public class sumBetweenIndexesQTimes {
     static void sumBetIndexesQTimes(int[] arr, int N, int Q) {
 
         Scanner sc = new Scanner(System.in);
-
-
         for(int i = 0; i < Q; i++) {
 
             int sum = 0;
@@ -37,6 +35,7 @@ public class sumBetweenIndexesQTimes {
             }
             System.out.println( "start : " + s + " end : " + e + " Sum :  " + sum);
         }
+        
         sc.close();
     }
 
