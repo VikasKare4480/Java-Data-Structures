@@ -20,10 +20,15 @@ public class BinaryTreeFlow {
     Scanner sc = new Scanner(System.in); 
 
     void createBianryTree() {
-
-        System.out.println("Enter data to insert in the Node");
-        int data = sc.nextInt();
         
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(5);
+        root.left.right = new Node(6);
+        root.right.left = new Node(7);
+        root.right.right = new Node(8);
+        System.out.println("Binary Tree Created Succesfully");
     }
 
     void preOrderTreeTraversal(Node root) {
@@ -57,6 +62,7 @@ public class BinaryTreeFlow {
             System.out.println(root.data + " ");
         }
     }
+    
     public static void main(String[] args) {
 
         Node node = null;
