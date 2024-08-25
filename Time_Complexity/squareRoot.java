@@ -22,6 +22,7 @@ public class squareRoot {
         int num = sc.nextInt();
 
         System.out.println(squareRoot1(num));
+        sc.close();
     }
     
 }
