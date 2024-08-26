@@ -1,5 +1,7 @@
 import java.util.Scanner;
 import java.util.Stack;
+import java.util.Queue;
+import java.util.LinkedList;
 
 // Node Structure 
 class Node  {
@@ -143,15 +145,39 @@ public class TreeOperations {
     }
 
     // A Helper method to for printing the level order traversal
-    void levelOrderTraversal(Node root) {
+    public void printLeverOrder(Node root) {
 
         if(root == null) {
-        
+
             return;
-        }   
+        }
+        System.out.println(root.toString());
 
-        Queue<Node> nodesQueue = new Queue(0)
+        Queue<Node> nodesQueue = new LinkedList<Node>();
+        nodesQueue.add(root);
 
+        while (!nodesQueue.isEmpty()) {
+
+            Node current = nodesQueue.remove();
+
+            if(current == null) {
+
+                break;
+            }else {
+
+                System.out.print(current.data + " ");
+
+                if(current.left != null) {
+
+                    nodesQueue.add(current.left);
+                }
+
+                if(current.right != null) {
+
+                    nodesQueue.add(current.right);
+                }
+            }
+        }
     }
 
     // A main method which executes first
@@ -161,6 +187,7 @@ public class TreeOperations {
         TreeOperations tops = new TreeOperations();
 
         Node root = new Node(1);
+        Node rootCopy = root;
         root.left = new Node(2);
         root.right = new Node(3);
         root.left.left = new Node(4);
@@ -196,6 +223,9 @@ public class TreeOperations {
         // get the height of the Binary Tree
         int height = tops.heightOfBianryTree(root);
         System.out.println("Height of Binary Tree -> " + height);
+
+        // print the node in levelOrderTraversal -> Breath First level
+        tops.printLeverOrder(rootCopy);
         sc.close();
     }
 }
