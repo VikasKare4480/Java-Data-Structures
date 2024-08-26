@@ -155,6 +155,7 @@ public class TreeOperations {
 
         Queue<Node> nodesQueue = new LinkedList<Node>();
         nodesQueue.add(root);
+        nodesQueue.add(null);
 
         while (!nodesQueue.isEmpty()) {
 
@@ -162,7 +163,14 @@ public class TreeOperations {
 
             if(current == null) {
 
-                break;
+                System.out.println();
+                if(nodesQueue.isEmpty()) {
+
+                    break;
+                }else {
+
+                    nodesQueue.add(null);
+                }
             }else {
 
                 System.out.print(current.data + " ");
@@ -226,6 +234,7 @@ public class TreeOperations {
 
         // print the node in levelOrderTraversal -> Breath First level
         tops.printLeverOrder(rootCopy);
+
         sc.close();
     }
 }
