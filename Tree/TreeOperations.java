@@ -224,6 +224,7 @@ public class TreeOperations {
         int nodeCount1 = tops.countNodes(root);
         System.out.println("nodeCount -> " + nodeCount1);
 
+        
         // Get sum of Tree nodes
         int nodeSum = tops.sumOfTreeNodes(root);
         System.out.println("Sum Of Tree Nodes - > " + nodeSum);

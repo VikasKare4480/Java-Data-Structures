@@ -16,28 +16,25 @@ public class CountTreeNodes {
 
     private static int countNodes(Node root) {
 
-        if(root.equals(null)) {
+
+        if(root == null) {
 
             return 0;
         }
 
-        int leftNodeCount = countNodes(root.left);
+        int leftNodeCount = 0;
+        int rightNodeCount = 0;
+        if(root.left != null) {
 
-        int rightNodeCount = countNodes(root.right);
+            leftNodeCount = countNodes(root.left);
+        }
+
+        if(root.right != null) {
+
+            rightNodeCount = countNodes(root.right);
+        }
 
         return 1 + leftNodeCount + rightNodeCount;
-
-        
-        // if (root != null) {
-
-        //     nodeCount++;
-        //     countNodes(root.left);
-        //     countNodes(root.right);
-        // }else {
-
-        //     // if root node is null and doesnot contains any node
-        //     return;
-        // }
     }
 
     public static void main(String[] args) {
@@ -49,8 +46,6 @@ public class CountTreeNodes {
         root.left.right = new Node(5);
         root.right.left = new Node(6);
         root.right.right = new Node(7);
-        countNodes(root);
         System.out.println("nodeCount -> " + countNodes(root));
-        // System.out.println("nodeCount -> " + nodeCount);
     }
 }

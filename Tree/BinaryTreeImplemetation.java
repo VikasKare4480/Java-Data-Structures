@@ -58,7 +58,7 @@ public class BinaryTreeImplemetation {
         }
     }
 
-    private void postOrderTreeTRaversal(Node root) {
+    private static void postOrderTreeTRaversal(Node root) {
 
         if(root != null) {
 
@@ -87,6 +87,6 @@ public class BinaryTreeImplemetation {
 
         // Post-order Tree Traversal 
         System.out.print("Postorder Tree Traversal : "); 
-        bt.postOrderTreeTRaversal(root);
+        postOrderTreeTRaversal(root);
     }
 }

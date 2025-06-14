@@ -28,7 +28,13 @@ public class BinaryTreeFlow {
         root.left.right = new Node(6);
         root.right.left = new Node(7);
         root.right.right = new Node(8);
-        System.out.println("Binary Tree Created Succesfully");
+        System.out.println("preOrderTreeTraversal");
+        preOrderTreeTraversal(root);
+        System.out.println("inOrderTreeTraversal");
+        inOrderTreeTraversal(root);
+        
+        System.out.println("postOrderTreeTraversal");
+        postOrderTreeTraversal(root);
     }
 
     void preOrderTreeTraversal(Node root) {
@@ -68,5 +74,6 @@ public class BinaryTreeFlow {
         // Node node = null;
         BinaryTreeFlow btf = new BinaryTreeFlow();
         btf.createBianryTree();
+
     }
 }
